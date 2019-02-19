@@ -1,5 +1,5 @@
 {
-    "name": "regionhalland/region-halland-options-page-site-message",
+    "name": "regionhalland/region-halland-acf-options-page-site-message",
     "description": "Skapar en sida i admin med ett formulär för 'Viktiga meddelanden'",
     "type": "wordpress-plugin",
     "license": "MIT",

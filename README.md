@@ -77,5 +77,8 @@ array (size=6)
 
 ## Versionhistorik
 
+### 1.0.1
+- Uppdaterad composer-fil
+
 ### 1.0.0
 - Första version
