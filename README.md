@@ -1,13 +1,22 @@
 # Skapa en sida i admin med ett formulär för 'Viktiga meddelanden'
 
-## Hur man använder Region Hallands plugin "region-halland-options-page-site-message"
+## Hur man använder Region Hallands plugin "region-halland-acf-options-page-site-message"
 
-Nedan följer instruktioner hur du kan använda pluginet "region-halland-options-page-site-message".
+Nedan följer instruktioner hur du kan använda pluginet "region-halland-acf-options-page-site-message".
 
 
 ## Användningsområde
 
 Denna plugin skapar en array() med all formulärdata för viktiga meddelanden
+
+
+## Licensmodell
+
+Denna plugin använder licensmodell GPL-3.0. Du kan läsa mer om denna licensmodell på:
+```sh
+A) Gnu.org (https://www.gnu.org/licenses/gpl-3.0.html)
+B) Wikipedia (https://sv.wikipedia.org/wiki/GNU_General_Public_License)
+```
 
 
 ## Installation och aktivering
@@ -22,7 +31,7 @@ C) Aktivera pluginet inifrån Wordpress admin
 ## Hämta hem pluginet via Git
 
 ```sh
-git clone https://github.com/RegionHalland/region-halland-options-page-site-message.git
+git clone https://github.com/RegionHalland/region-halland-acf-options-page-site-message.git
 ```
 
 
@@ -36,7 +45,7 @@ Repositories = var pluginen är lagrad, i detta fall på github
 "repositories": [
   {
     "type": "vcs",
-    "url": "https://github.com/RegionHalland/region-halland-options-page-site-message.git"
+    "url": "https://github.com/RegionHalland/region-halland-acf-options-page-site-message.git"
   },
 ],
 ```
@@ -46,7 +55,7 @@ OBS! Justera så att du hämtar aktuell version.
 
 ```sh
 "require": {
-  "regionhalland/region-halland-options-page-site-message": "1.0.0"
+  "regionhalland/region-halland-acf-options-page-site-message": "1.0.0"
 },
 ```
 
@@ -76,6 +85,9 @@ array (size=6)
 ```
 
 ## Versionhistorik
+
+### 1.1.0
+- Uppdaterad med information om licensmodell
 
 ### 1.0.1
 - Uppdaterad composer-fil
