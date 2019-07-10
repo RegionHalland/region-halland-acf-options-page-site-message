@@ -67,7 +67,9 @@ OBS! Justera så att du hämtar aktuell version.
 @if($myMessage['show_message'] == true)
   <span>{!! $myMessage['rubrik'] !!}</span><br>
   <span>{!! $myMessage['meddelande'] !!}</span><br>
-  <a href="{{ $myMessage['link_url'] }}" target="{{ $myMessage['link_target'] }}">{{ $myMessage['link_title'] }}</a>
+  @if($myMessage['has_link'] == 1)
+    <a href="{{ $myMessage['link_url'] }}" target="{{ $myMessage['link_target'] }}">{{ $myMessage['link_title'] }}</a>
+  @endif
 @endif
 ```
         
@@ -81,10 +83,14 @@ array (size=6)
   'link_title' => string 'Lorem Ipsim' (length=11)
   'link_url' => string 'http://exempel.se/lorem-ipsum/' (length=30)
   'link_target' => string '_blank' (length=6)
+  'has_link' => int 1
   'show_message' => boolean true
 ```
 
 ## Versionhistorik
+
+### 1.2.0
+- Lagt till kontroll om länk finns.
 
 ### 1.1.0
 - Uppdaterad med information om licensmodell

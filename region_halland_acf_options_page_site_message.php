@@ -6,7 +6,7 @@
 	/*
 	Plugin Name: Region Halland ACF Options Page Site Message
 	Description: Skapa en subsida till theme.php för "viktigt meddelande"
-	Version: 1.1.0
+	Version: 1.2.0
 	Author: Roland Hydén
 	License: GPL-3.0
 	Text Domain: regionhalland
@@ -187,9 +187,19 @@
 		$myMessage['rubrik'] 		= get_field('name_1000074_name_1000076', 'options');
 		$myMessage['meddelande'] 	= get_field('name_1000074_name_1000078', 'options');
 		$arrLink 					= get_field('name_1000074_name_1000080', 'options');
-		$myMessage['link_title'] 	= $arrLink['title'];
-		$myMessage['link_url'] 		= $arrLink['url'];
-		$myMessage['link_target'] 	= $arrLink['target'];
+		
+		if (is_array($arrLink)) {
+			$myMessage['link_title'] = $arrLink['title'];
+			$myMessage['link_url'] = $arrLink['url'];
+			$myMessage['link_target'] = $arrLink['target'];
+			$myMessage['has_link'] = 1;
+		} else {
+			$myMessage['link_title'] = "";
+			$myMessage['link_url'] = "";
+			$myMessage['link_target'] = "";
+			$myMessage['has_link'] = 0;
+		}
+
 		$myMessage['show_message'] 	= is_array(get_field('name_1000074_name_1000082', 'options'));
 
 		// Return array
