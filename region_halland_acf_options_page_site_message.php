@@ -6,7 +6,7 @@
 	/*
 	Plugin Name: Region Halland ACF Options Page Site Message
 	Description: Skapa en subsida till theme.php för "viktigt meddelande"
-	Version: 1.3.0
+	Version: 1.3.1
 	Author: Roland Hydén
 	License: GPL-3.0
 	Text Domain: regionhalland

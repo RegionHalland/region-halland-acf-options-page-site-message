@@ -88,6 +88,9 @@ array (size=6)
 
 ## Versionhistorik
 
+### 1.3.1
+- Korrigerat länk till licens-fil
+
 ### 1.3.0
 - Bifogat fil med licensmodell
 
